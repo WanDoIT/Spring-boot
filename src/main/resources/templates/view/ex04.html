@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><!-- 타임리프 명시적 선언 -->
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	
+	[[${name}]]
+	[[${vo}]]
+	<!-- 컨트롤러에서 보내는 값을 JSON문자열 형태로 받아줍니다. -->
+	<script th:inline="javascript">
+		var aa= '[[${name}]]';
+		var bb='[[${vo}]]';
+		
+		console.log(JSON.parse(bb).age);
+		console.log('[[${vo.age}]]');
+	</script>
+</body>
+</html>

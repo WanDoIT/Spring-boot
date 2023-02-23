@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><!-- 타임리프 명시적 선언 -->
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>타임리프 내장함수(구글링해서 필요한 함수 사용하기)</h3>
+	
+	[[${regdate}]]
+	<br/>
+	[[${#temporals.format(regdate,'yyyy-MM-dd') }]]
+	<br/>
+	[[${#strings.substring('홍길동',0,1)}]]
+</body>
+</html>
